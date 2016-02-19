@@ -15,7 +15,7 @@ digraph "FFXIV" {
     subgraph {
       rank = sink;
       node [shape=box];
-      i70 -> i80 -> i90 -> i100 -> i110 -> i120 -> i130
+      i70 -> i80 -> i90 -> i95 -> i100 -> i110 -> i115 -> i120 -> i130 -> i135
     }
     subgraph {
       rank = same;
@@ -32,11 +32,13 @@ digraph "FFXIV" {
     }
     2.0 -> "Crafted 2.0" -> i70
     2.0 -> "BCOB" -> i90
+    "BCOB" -> i95
     2.0 -> "AF+" -> i90
     2.1 -> "CT1" -> i80
     2.2 -> "Crafted 2.2" -> i90
     2.2 -> "Soldiery" -> i100
     2.2 -> "SCOB" -> i110
+    "SCOB" -> i115
     "SCOB" -> "Aug. Soldiery" -> i110
     2.3 -> "CT2" -> i100
     "CT2" -> "Aug. Soldiery"
@@ -44,6 +46,7 @@ digraph "FFXIV" {
     2.4 -> "Crafted 2.4" -> i110
     2.4 -> "Poetics" -> i120
     2.4 -> "FCOB" -> i130
+    "FCOB" -> i135
     "FCOB" -> "Aug. Poetics" -> i130
     2.5 -> "CT3" -> i120
     "CT3" -> "Aug. Poetics"
@@ -58,7 +61,7 @@ digraph "FFXIV" {
     subgraph {
       rank = sink;
       node [shape=box];
-      i170 -> i180 -> i190 -> i200 -> i210 -> i220 -> i230 -> i240
+      i170 -> i180 -> i190 -> i200 -> i210 -> i220 -> i230 -> i240 -> i245
     }
     subgraph {
       rank = same;
@@ -93,5 +96,6 @@ digraph "FFXIV" {
     3.2 -> "Lore" -> i230
     3.2 -> "Son Savage" -> i240 
     "Son Savage" -> "Aug. Lore" -> i240
+    "Son Savage" -> i245
   }
 }
