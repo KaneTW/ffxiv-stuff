@@ -32,13 +32,13 @@ digraph "FFXIV" {
     }
     2.0 -> "Crafted 2.0" -> i70
     2.0 -> "BCOB" -> i90
-    "BCOB" -> i95
+    "BCOB" -> i95 [arrowhead=crow,style=dashed]
     2.0 -> "AF+" -> i90
     2.1 -> "CT1" -> i80
     2.2 -> "Crafted 2.2" -> i90
     2.2 -> "Soldiery" -> i100
     2.2 -> "SCOB" -> i110
-    "SCOB" -> i115
+    "SCOB" -> i115 [arrowhead=crow,style=dashed]
     "SCOB" -> "Aug. Soldiery" -> i110
     2.3 -> "CT2" -> i100
     "CT2" -> "Aug. Soldiery"
@@ -46,7 +46,7 @@ digraph "FFXIV" {
     2.4 -> "Crafted 2.4" -> i110
     2.4 -> "Poetics" -> i120
     2.4 -> "FCOB" -> i130
-    "FCOB" -> i135
+    "FCOB" -> i135 [arrowhead=crow,style=dashed]
     "FCOB" -> "Aug. Poetics" -> i130
     2.5 -> "CT3" -> i120
     "CT3" -> "Aug. Poetics"
@@ -91,11 +91,12 @@ digraph "FFXIV" {
     "VA1" -> "Aug. Esoterics"
     3.1 -> "Diadem 3.1" -> i210
     3.2 -> "Crafted 3.2" -> i220
-    3.2 -> "Sephirot" -> i220
+    3.2 -> "Sephirot"
+    "Sephirot" -> i220 [arrowhead=crow,style=dashed]
     3.2 -> "Son Normal" -> i220
     3.2 -> "Lore" -> i230
     3.2 -> "Son Savage" -> i240 
     "Son Savage" -> "Aug. Lore" -> i240
-    "Son Savage" -> i245
+    "Son Savage" -> i245 [arrowhead=crow,style=dashed]
   }
 }
