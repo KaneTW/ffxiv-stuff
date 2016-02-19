@@ -1,4 +1,5 @@
 digraph "FFXIV" {
+  bgcolor=transparent;
   rankdir = LR;
   {
     // needed so that graph is aligned properly. if something breaks, feel free to remove this
